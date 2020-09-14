@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Creation Compte</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="play1">
+    <img src="assets/image.jpg" width="100" height="100">
+   </div>
+   
+  <div style="margin-top:30px;">
+  <form #f="ngForm" (ngSubmit)="gotoSignup()">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+           <ion-item>
+             <ion-input type="text" placeholder="lastName" [(ngModel)]="loadData.lastName" required="" name="lastName"></ion-input>
+           </ion-item>
+        </ion-col>
+     </ion-row>
+
+     <ion-row>
+      <ion-col>
+         <ion-item>
+           <ion-input type="text" placeholder="firstName" [(ngModel)]="loadData.firstName" required="" name="firstName"></ion-input>
+         </ion-item>
+      </ion-col>
+   </ion-row>
+
+   <ion-row>
+    <ion-col>
+       <ion-item>
+         <ion-input type="email" placeholder="email" [(ngModel)]="loadData.email" required="" name="email"></ion-input>
+       </ion-item>
+    </ion-col>
+ </ion-row>
+
+ <ion-row>
+  <ion-col>
+     <ion-item>
+       <ion-input type="text" placeholder="Telephone" [(ngModel)]="loadData.telephone" required="" name="telephone"></ion-input>
+     </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+     <ion-item>
+       <ion-input type="text" placeholder="votre adresse" [(ngModel)]="loadData.adresse" required="" name="adresse"></ion-input>
+     </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+     <ion-item>
+       <ion-input type="text" placeholder="votre code" [(ngModel)]="loadData.codeAccess" required="" name="codeAccess"></ion-input>
+     </ion-item>
+  </ion-col>
+</ion-row>
+  </ion-grid>
+      <div class="bouton">
+        <ion-button color="dark" expand="full" type="submit" ><span>CONNEXION</span></ion-button>
+      </div>
+    </form>
+
+  </div>
+</ion-content>

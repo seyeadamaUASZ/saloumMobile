@@ -1,0 +1,24 @@
+<ion-menu  contentId="contente">
+  <ion-header color="dark">
+      <ion-toolbar class="profil">
+          <ion-avatar class="item">
+                <img  src="assets/image.jpg">
+          </ion-avatar>
+            <p>{{nom}}  {{prenom}} </p>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+              <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+                <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title}}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+
+</ion-menu>
+<ion-router-outlet id="contente" main></ion-router-outlet>

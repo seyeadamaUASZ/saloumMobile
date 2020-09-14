@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>historique</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="play1">
+    <img src="assets/image.jpg" width="60" height="60">
+    <p style="text-align:center;">Liste des operations effectuées</p>
+
+    <ion-list *ngIf="operations">
+     <ion-item *ngFor="let item of operations" >
+        <ion-label>Date: {{item.dateOperation|date:'dd/MM/yyyy-HH:mm'}} type: {{item.typeOperation}}</ion-label> 
+        <ion-button item-end color="dark">detail</ion-button>
+     </ion-item>
+   </ion-list>
+
+   </div>
+
+   <div *ngIf="operations==null" >
+    <div class="message"><strong>Pas d'operations effectuées !!!</strong></div>
+  </div>
+
+</ion-content>

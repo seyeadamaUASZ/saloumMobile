@@ -1,5 +1,7 @@
 {
   "name": "saloumMobile",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -13,19 +13,49 @@
   line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-title{
+  font-family:'Times New Roman', Times, serif;
+  color:#ffffff;
+}
+.play{
+  position: relative;
+  top: 40px;
+  text-align: center;
+  height: 250px;
 }
 
-#container a {
-  text-decoration: none;
+.play1{
+  position: relative;
+  top: 0px;
+  text-align: center;
+  height: 170px;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
+.play2{
+  position: relative;
+  top: 0px;
+  text-align: center;
+  //height: 30px;
+  margin-top:30px;
+}
+ion-input {
+  font-family:'Times New Roman', Times, serif;
+}
+.bouton{
+  margin: 20px;
+}
+ion-button{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
+}
+span{
+  color: #ffffff;
+  font-size: 13px;
+}
+.inscrit{
+  position: relative;
+  top: 15px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
 }

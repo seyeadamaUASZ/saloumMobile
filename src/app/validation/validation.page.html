@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Validation compte</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+  <div class="play1">
+    <img src="assets/image.jpg" width="100" height="100">
+   </div>
+   
+   <div style="margin-top:120px;">
+   <form #f="ngForm" (ngSubmit)="gotoValidate()">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+           <ion-item>
+             <ion-input type="text" placeholder="code" [(ngModel)]="loadData.codeOtp" required="" name="codeOtp"></ion-input>
+           </ion-item>
+        </ion-col>
+     </ion-row>
+      </ion-grid>
+      <div class="bouton">
+        <ion-button color="dark" expand="full" type="submit" ><span>Valider</span></ion-button>
+      </div>
+    </form>
+  </div>
+ 
+</ion-content>

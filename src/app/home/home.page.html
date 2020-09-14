@@ -1,20 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header >
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Bienvenue Saloum-Trans</ion-title>
   </ion-toolbar>
+  
 </ion-header>
+ <hr/>
+<ion-content>
+  <div class="play1">
+    <img src="assets/image.jpg" width="60" height="60">
+   </div>
+   <div class="play2">
+    N° compte  : {{numeroCompte}}
+   </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+   <div class="play2">
+    Date ouverture  : {{dateOuv|date:'dd/MM/yyyy-HH:mm'}}
+   </div>
+        <ion-card>
+          <ion-card-header>
+            <label style="font-style: italic;font-weight: bold;"> Solde du compte</label>
+          </ion-card-header>
+          <ion-card-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+            <div style="font-style: normal;font-weight: bold;">
+              solde :   {{solde}}  FCFA
+             </div> 
+
+          </ion-card-content>
+          <ion-row no-padding>
+          
+            <ion-col text-right>
+             
+            </ion-col>
+          </ion-row>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <label style="font-style: italic;font-weight: bold;"> Liste des transactions</label>
+          </ion-card-header>
+          <ion-card-content>
+             Pas encore de transaction
+          </ion-card-content>
+          <ion-row no-padding>
+          
+            <ion-col text-right>
+             
+            </ion-col>
+          </ion-row>
+        </ion-card>
+
+
+    
 </ion-content>
